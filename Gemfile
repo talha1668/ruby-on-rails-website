@@ -58,3 +58,5 @@ end
 gem 'devise'
 
 gem "tailwindcss-rails", "~> 2.7"
+gem "faker"
+gem 'money-rails', '~> 1.12'

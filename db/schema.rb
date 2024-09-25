@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2024_09_19_131219) do
+ActiveRecord::Schema[7.2].define(version: 2024_09_20_131422) do
   create_table "properties", force: :cascade do |t|
     t.string "name"
     t.string "healine"
@@ -21,6 +21,8 @@ ActiveRecord::Schema[7.2].define(version: 2024_09_19_131219) do
     t.string "country"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.integer "price_cents", default: 0, null: false
+    t.string "price_currency"
   end
 
   create_table "users", force: :cascade do |t|
