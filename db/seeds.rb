@@ -20,3 +20,18 @@ Properties = Property.create(
 
     }
 )
+20.times do 
+    Property.create(
+        {
+            name: Faker::Lorem.word,
+            description: Faker::Lorem.sentence,
+            healine: Faker::Lorem.sentence,
+
+            address_1: Faker::Address.street_address,
+            address_2: Faker::Address.secondary_address,
+            city: Faker::Address.city,
+            country: Faker::Address.country,
+            price: Money.from_amount(50,"PKR")
+        }
+    )
+end
