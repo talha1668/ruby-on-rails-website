@@ -57,6 +57,6 @@ group :test do
 end
 gem 'devise'
 
-gem "tailwindcss-rails", "~> 2.7"
+gem "tailwindcss-rails", "~> 3.0"
 gem "faker"
 gem 'money-rails', '~> 1.12'
